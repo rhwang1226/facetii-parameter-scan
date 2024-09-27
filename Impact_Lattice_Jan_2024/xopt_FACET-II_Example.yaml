@@ -1,0 +1,42 @@
+xopt:
+    max_evaluations: 12800
+    dump_file: dump_FACET_Example.yaml
+
+generator:
+      name: neldermead
+      initial_point: {SOL10111:solenoid_field_scale: 0.25}
+      adaptive: true
+      xatol: 0.0001
+      fatol: 0.0001  
+evaluator:
+    function: impact.evaluate_impact_with_distgen
+    function_kwargs:
+        workdir: /sdf/scratch/users/c/cropp
+        impact_config: ./Impact_Lattice/ImpactT.yaml
+        distgen_input_file: ./Impact_Lattice/distgen.yaml
+        archive_path: /sdf/data/ad/ard/u/cropp/FACET_March_2024_Comparison
+
+vocs:
+    variables:
+        SOL10111:solenoid_field_scale: [0.1, 0.4]
+     
+
+    objectives: {end_sigma_x: MINIMIZE}
+    constraints:
+       
+        end_norm_emit_x: [LESS_THAN, 1.5e-03]
+        
+    linked_variables: {}
+    constants:
+        distgen:n_particle: 100
+        timeout: 10000
+        header:Nx: 8
+        header:Ny: 8
+        header:Nz: 8
+        numprocs: 1
+        command: /sdf/home/c/cropp/conda/envs/xopt/bin/ImpactTexe
+        command_mpi: /sdf/home/c/cropp/conda/envs/xopt/bin/ImpactTexe-mpi
+        stop: 14
+        distgen:t_dist:sigma_t:value: 6.794055201698514        
+        
+

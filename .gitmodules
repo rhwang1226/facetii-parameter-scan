@@ -1,0 +1,6 @@
+[submodule "OpenPMD_to_Bmad"]
+	path = OpenPMD_to_Bmad
+	url = https://github.com/ericcropp/OpenPMD_to_Bmad.git
+[submodule "facet2-lattice"]
+	path = facet2-lattice
+	url = https://github.com/slaclab/facet2-lattice.git
