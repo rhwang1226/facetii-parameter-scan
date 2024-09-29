@@ -1,6 +1,6 @@
 To use this repo, clone it using
 
-git clone git@github.com:ericcropp/FACET-II_Example_Training_Data_Generation.git
+git clone https://github.com/rhwang1226/facetii-parameter-scan.git
 
 Then, to get the submodules to load:
 
