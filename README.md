@@ -19,4 +19,6 @@ The components of this library are as follows:
 1) Activate_CSR.tao: a file to activate CSR for Bmad, if requested
 2) environment.yml: a list of packages needed to recreate the conda environmnet
 3) Helper_Functions.py: A list of functions required for the jupyter notebooks to run
-4) Training_Data_Example.ipynb: The main notebook for making training data.  
+4) Training_Data_Example.ipynb: The main notebook for making training data. 
+
+Original scripts by Eric Cropp. Documentation created by Robin Hwang and available at https://confluence.slac.stanford.edu/display/FACET/NERSC+Setup+for+Parameter+Scans
