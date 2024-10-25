@@ -3,10 +3,14 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - _libgcc_mutex
+  - _openmp_mutex
+  - alsa-lib
   - annotated-types
   - aom
   - appdirs
   - asttokens
+  - attr
   - aws-c-auth
   - aws-c-cal
   - aws-c-common
@@ -78,6 +82,9 @@ dependencies:
   - fonts-conda-ecosystem
   - fonts-conda-forge
   - fonttools
+  - freeglut
+  - freetype
+  - fribidi
   - fsspec
   - gettext
   - gettext-tools
@@ -118,6 +125,7 @@ dependencies:
   - jupyter_client
   - jupyter_core
   - jxrlib
+  - keyutils
   - kiwisolver
   - krb5
   - lame
@@ -140,23 +148,31 @@ dependencies:
   - libbrotlicommon
   - libbrotlidec
   - libbrotlienc
+  - libcap
   - libcblas
   - libclang-cpp15
   - libclang-cpp18.1
   - libclang13
   - libcrc32c
+  - libcups
   - libcurl
   - libdeflate
+  - libdrm
   - libedit
   - libev
   - libevent
   - libexpat
   - libffi
   - libflac
+  - libgcc-ng
+  - libgcrypt
   - libgettextpo
   - libgettextpo-devel
+  - libgfortran-ng
   - libgfortran5
   - libglib
+  - libglu
+  - libgomp
   - libgoogle-cloud
   - libgoogle-cloud-storage
   - libgpg-error
@@ -172,6 +188,7 @@ dependencies:
   - libllvm15
   - libllvm18
   - libnghttp2
+  - libnsl
   - libogg
   - libopenblas
   - libopencv
@@ -179,6 +196,9 @@ dependencies:
   - libopenvino-auto-batch-plugin
   - libopenvino-auto-plugin
   - libopenvino-hetero-plugin
+  - libopenvino-intel-cpu-plugin
+  - libopenvino-intel-gpu-plugin
+  - libopenvino-intel-npu-plugin
   - libopenvino-ir-frontend
   - libopenvino-onnx-frontend
   - libopenvino-paddle-frontend
@@ -187,6 +207,7 @@ dependencies:
   - libopenvino-tensorflow-lite-frontend
   - libopus
   - libparquet
+  - libpciaccess
   - libpng
   - libpq
   - libprotobuf
@@ -195,17 +216,23 @@ dependencies:
   - libsodium
   - libsqlite
   - libssh2
+  - libstdcxx-ng
+  - libsystemd0
+  - libtasn1
   - libthrift
   - libtiff
   - libtorch
   - libunistring
   - libutf8proc
   - libuuid
+  - libuv
+  - libva
   - libvorbis
   - libvpx
   - libwebp-base
   - libxcb
   - libxcrypt
+  - libxkbcommon
   - libxml2
   - libzlib
   - libzopfli
@@ -240,6 +267,7 @@ dependencies:
   - nss
   - numexpr
   - numpy
+  - ocl-icd
   - opencv
   - openexr
   - openh264
@@ -271,6 +299,7 @@ dependencies:
   - pthread-stubs
   - ptyprocess
   - pugixml
+  - pulseaudio-client
   - pure_eval
   - py-cpuinfo
   - py-opencv
@@ -334,9 +363,23 @@ dependencies:
   - typing_extensions
   - tzdata
   - urllib3
+  - wayland
+  - wayland-protocols
   - wcwidth
   - wheel
+  - x264
+  - x265
+  - xcb-util
+  - xcb-util-cursor
+  - xcb-util-image
+  - xcb-util-keysyms
+  - xcb-util-renderutil
+  - xcb-util-wm
+  - xkeyboard-config
   - xopt
+  - xorg-fixesproto
+  - xorg-inputproto
+  - xorg-kbproto
   - xorg-libice
   - xorg-libsm
   - xorg-libx11
@@ -366,4 +409,4 @@ dependencies:
   - pip:
       - fastkde
       - xarray
-prefix: /global/homes/c/cropp/.conda/envs/xopt
+prefix: /global/homes/r/rhwang/.conda/envs/xopt
